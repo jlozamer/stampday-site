@@ -1,0 +1,1769 @@
+{
+ "version": "2026-11-07",
+ "source": "Daycount research, official sources; see replica/research",
+ "countries": [
+  {
+   "country": "CY",
+   "name": "Cyprus",
+   "dayTest": {
+    "ruleID": "cy-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "arrival_not_departure",
+    "continuous": false
+   },
+   "summary": "An individual is Cyprus tax resident for a tax (calendar) year if present in Cyprus for one or more periods that together exceed 183 days in that year. Arrival days count as Cyprus days, departure days do not.",
+   "legalReference": "Income Tax Law 118(I)/2002, s.2, definition of 'resident in the Republic' para (a)(i), as replaced by Law 244(I)/2025 (Gazette No. 5070, 31.12.2025), in force 1 Jan 2026",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Ο περί Φορολογίας του Εισοδήματος (Τροποποιητικός) (Αρ. 4) Νόμος του 2025, Ν. 244(Ι)/2025",
+     "publisher": "Official Gazette of the Republic of Cyprus (via CyLaw)",
+     "url": "https://www.cylaw.org/nomoi/arith/2025_1_244.pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "Law 244(I)/2025, s.2(a), day-count paragraph",
+     "publisher": "Official Gazette of the Republic of Cyprus (via CyLaw)",
+     "url": "https://www.cylaw.org/nomoi/arith/2025_1_244.pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "Cyprus – Information on Residency for tax purposes (28 April 2023)",
+     "publisher": "OECD AEOI portal (information supplied by Cyprus Tax Department)",
+     "url": "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency/Cyprus-Tax-Residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "cy-tax-60",
+     "summary": "Someone with fewer than 184 Cyprus days can still be Cyprus resident if they spend at least 60 days in Cyprus, do not exceed 183 days in any single other country, have a Cyprus business/employment/office that is not terminated in the year, and own or rent a permanent home in Cyprus. From 2026 being tax resident elsewhere no longer disqualifies.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm there is no Tax Department circular after 1 Jan 2026 that changes how the statutory day-count rules are applied (e.g. overnight transit through Larnaca/Paphos).",
+    "Confirm what evidence the Tax Department accepts for day counts (passport stamps are not issued for EU travel; boarding passes, bank/card records?).",
+    "Does 'one other state' mean each other state separately (as the text reads), so that e.g. 150 days in Spain plus 100 in Greece is fine?",
+    "Does a rented home have to be available for the whole year?",
+    "What counts as 'holding an office' (e.g. director of a Cyprus company) and does delegation to an alternate director break the condition (earlier Tax Department circulars said it did)?",
+    "With the 'not tax resident elsewhere' condition gone from 2026, Spain may still treat the person as Spanish resident under LIRPF art. 9 (e.g. centre of economic interests). Confirm how the Cyprus-Spain double tax treaty tie-breaker would apply and what Cyprus certificate wording the AEAT accepts."
+   ]
+  },
+  {
+   "country": "ES",
+   "name": "Spain",
+   "dayTest": {
+    "ruleID": "es-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident in Spain for a calendar year if present more than 183 days (i.e. 184+). Any part-day of proven presence counts as a full day, days between proven Spanish presences are presumed Spanish, and short absences abroad count as Spanish days unless tax residence elsewhere is proved by certificate.",
+   "legalReference": "Ley 35/2006 del IRPF, art. 9.1.a); TEAC RG 4045/2020 (28-03-2023) and RG 04812/2020 (25-04-2023)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Ley 35/2006, de 28 de noviembre, del IRPF – texto consolidado, art. 9",
+     "publisher": "BOE (Agencia Estatal Boletín Oficial del Estado)",
+     "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&tn=1&p=20231228#a9",
+     "type": "legislation"
+    },
+    {
+     "title": "Ley 35/2006 del IRPF, art. 9.1.a) segundo párrafo",
+     "publisher": "BOE",
+     "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&tn=1&p=20231228#a9",
+     "type": "legislation"
+    },
+    {
+     "title": "El TEAC define el concepto \"días de permanencia\" para determinar la residencia habitual en España",
+     "publisher": "Agencia Tributaria (AEAT)",
+     "url": "https://sede.agenciatributaria.gob.es/Sede/informacion-institucional/sobre-agencia-tributaria/2023/El_TEAC_define_el_concepto__dias_de_permanencia__para_determinar_la_residencia_habitual_en_Espana.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "El TEAC define el concepto \"días de permanencia\" (consecutive days not required)",
+     "publisher": "Agencia Tributaria (AEAT)",
+     "url": "https://sede.agenciatributaria.gob.es/Sede/informacion-institucional/sobre-agencia-tributaria/2023/El_TEAC_define_el_concepto__dias_de_permanencia__para_determinar_la_residencia_habitual_en_Espana.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Manual práctico de Renta 2025 – Residencia habitual en territorio español",
+     "publisher": "Agencia Tributaria (AEAT)",
+     "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c02-irpf-cuestiones-generales/sujecion-irpf-aspectos-personales/residencia-habitual-territorio-espanol.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "DGT consulta vinculante V0862/2021 (13-04-2021) – COVID days and treaty tie-breaker",
+     "publisher": "CEF fiscal-impuestos.com (reproducing DGT ruling)",
+     "url": "https://www.fiscal-impuestos.com/sites/fiscal-impuestos.com/files/NFC079315_0.pdf",
+     "type": "secondary"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "es-tax-economic-interests",
+     "summary": "Even with 183 or fewer Spanish days, a person is Spanish resident if the main centre of their business activities or economic interests is in Spain; and residence is presumed (rebuttably) if their spouse and minor children live in Spain.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm there were no changes to art. 9 LIRPF in 2024-2026 (BOE consolidated text opened shows last relevant modification 28/12/2023; none found).",
+    "If both Spain (by days or economic interests) and Cyprus claim residence, how does art. 4 of the Spain-Cyprus DTT (2013) tie-breaker resolve it?",
+    "If the person owns/manages a Spanish company (e.g. a Spanish SL) or most income/assets are Spanish, is the economic-interests test met regardless of days?",
+    "Is a Cyprus tax residence certificate obtained under the 60-day rule accepted by the AEAT as 'acreditar su residencia fiscal en otro país' (the AEAT has historically required certificates issued 'en el sentido del Convenio')?",
+    "Which evidence of presence in Cyprus will the AEAT accept to rebut 'presumed days' between two Spanish presences (Cyprus utility bills, card payments, flight records, the app's own GPS log)?"
+   ]
+  },
+  {
+   "country": "PT",
+   "name": "Portugal",
+   "dayTest": {
+    "ruleID": "pt-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "midnight",
+    "continuous": false
+   },
+   "summary": "Resident in Portugal if present more than 183 days, consecutive or not, in any 12-month period beginning or ending in the year; a day counts only if it includes an overnight stay in Portugal. Owning or renting a home intended as habitual residence can trigger residence with fewer days.",
+   "legalReference": "Código do IRS (CIRS), art. 16.º, n.º 1 a)-b), n.º 2, n.º 3 (version shown up to Lei n.º 82/2023, de 29 de dezembro)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Código do IRS – Artigo 16.º Residência",
+     "publisher": "Autoridade Tributária e Aduaneira (Portal das Finanças)",
+     "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx",
+     "type": "legislation"
+    },
+    {
+     "title": "Código do IRS – Artigo 16.º, n.º 2",
+     "publisher": "Autoridade Tributária e Aduaneira (Portal das Finanças)",
+     "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx",
+     "type": "legislation"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Confirm no amendment to art. 16 CIRS after Lei 82/2023 (the Portal das Finanças page showed the version up to Dec 2023).",
+    "Does a night spent on an overnight flight landing in Portugal, or in an airport transit area, count as 'dormida'?",
+    "Exactly how the 'any 12-month period starting or ending in the year' window is applied across year ends."
+   ]
+  },
+  {
+   "country": "GR",
+   "name": "Greece",
+   "dayTest": {
+    "ruleID": "gr-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident in Greece if present for more than 183 days in total in any 12-month period, with residence running from the first day of presence. Any part of a day in Greece, including arrival and departure days, counts as a full day. Purely tourist or medical stays of up to 365 days are excluded.",
+   "legalReference": "Κώδικας Φορολογίας Εισοδήματος (Law 4172/2013), art. 4(1)-(2); AADE circular Ε.2064/2023",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Tax residence for natural persons (ITC)",
+     "publisher": "Independent Authority for Public Revenue (AADE)",
+     "url": "https://aade.gr/en/greeks-abroad-non-residents/income-taxation/tax-residence-natural-persons-itc",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Εγκύκλιος Ε.2064/2023 – Παροχή οδηγιών για την εφαρμογή του άρθρου 4 παρ. 1 και 2 ΚΦΕ",
+     "publisher": "Independent Authority for Public Revenue (AADE)",
+     "url": "https://www.aade.gr/sites/default/files/2023-10/e_2064_2023.pdf",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Ν. 4172/2013, άρθρο 4 – Φορολογική κατοικία",
+     "publisher": "Taxheaven (consolidated law text)",
+     "url": "https://www.taxheaven.gr/law/4172/2013/arthro/4",
+     "type": "secondary"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Confirm no amendment to art. 4 ITC in 2024-2026 (none found).",
+    "How does AADE treat 'short periods abroad' inside a tourist/medical stay, and is a frequent visitor (e.g. holidays) at risk of the 183-day rule?"
+   ]
+  },
+  {
+   "country": "IT",
+   "name": "Italy",
+   "dayTest": {
+    "ruleID": "it-tax-presence",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "From 2024 a person is Italian tax resident if, for most of the calendar year (183 days, 184 in a leap year), they are physically present in Italy, counting any part of a day as a full day, or have their civil-law residence or domicile there; registry enrolment creates a rebuttable presumption. The rule continues unchanged in the new consolidated TUIR (D.Lgs. 117/2026) from 1 Jan 2027.",
+   "legalReference": "TUIR (DPR 917/1986) art. 2(2) as amended by D.Lgs. 209/2023, art. 1, from 2024; carried into art. 2 of the new Testo unico delle imposte sui redditi, D.Lgs. 19 giugno 2026 n. 117 (applies from 1-1-2027); Agenzia delle Entrate Circolare 20/E del 4-11-2024",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "DPR 22 dicembre 1986 n. 917 (TUIR), art. 2 – testo in vigore dal 29-12-2023",
+     "publisher": "Normattiva (Istituto Poligrafico e Zecca dello Stato)",
+     "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art2!vig=2026-06-30",
+     "type": "legislation"
+    },
+    {
+     "title": "TUIR art. 2(2) – registry presumption",
+     "publisher": "Normattiva",
+     "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art2!vig=2026-06-30",
+     "type": "legislation"
+    },
+    {
+     "title": "Circular No. 20/E of 4 November 2024 (English courtesy translation)",
+     "publisher": "Agenzia delle Entrate",
+     "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/6519685/Circolare_20_del_4_11_2024_Eng.pdf/bdacb2e0-a699-5180-719e-665210459d75",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Circular No. 20/E – majority of the tax period",
+     "publisher": "Agenzia delle Entrate",
+     "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/6519685/Circolare_20_del_4_11_2024_Eng.pdf/bdacb2e0-a699-5180-719e-665210459d75",
+     "type": "tax_authority"
+    },
+    {
+     "title": "DPR 917/1986 art. 2 – current Normattiva view (abrogation note)",
+     "publisher": "Normattiva",
+     "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art2",
+     "type": "legislation"
+    },
+    {
+     "title": "Nuovo TUIR: tavola di corrispondenza fiscalità internazionale",
+     "publisher": "Fiscomania",
+     "url": "https://fiscomania.com/tuir-tavola-corrispondenza-fiscalita-internazionale/",
+     "type": "secondary"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Confirm on the Gazzetta Ufficiale text of D.Lgs. 117/2026 that new art. 2(2) reproduces the 2024 wording (only a secondary source confirmed this).",
+    "Do days of mere airport transit (airside, no entry) count as presence?"
+   ]
+  },
+  {
+   "country": "GB",
+   "name": "United Kingdom",
+   "dayTest": {
+    "ruleID": "gb-tax-auto-uk-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "taxYear",
+     "startMonth": 4,
+     "startDay": 6
+    },
+    "counting": "midnight",
+    "continuous": false
+   },
+   "summary": "First automatic UK test: 183 or more days in the UK in the tax year makes the person UK resident, unless an automatic overseas test is met first.",
+   "legalReference": "Finance Act 2013, Schedule 45; HMRC RDR3 section 3.1",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Guidance Note for Statutory Residence Test (RDR3)",
+     "publisher": "HMRC",
+     "url": "https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Tax on foreign income: Residence",
+     "publisher": "GOV.UK / HMRC",
+     "url": "https://www.gov.uk/tax-foreign-income/residence",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "gb-tax-auto-overseas-16",
+     "summary": "First automatic overseas test: a person who was UK resident in at least one of the previous three tax years is automatically non-resident if they spend fewer than 16 days in the UK in the tax year.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-auto-overseas-46",
+     "summary": "Second automatic overseas test: a person who was not UK resident in any of the previous three tax years is automatically non-resident if they spend fewer than 46 days in the UK in the tax year.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-auto-overseas-fte-91",
+     "summary": "Third automatic overseas test: full-time work abroad with fewer than 91 UK days and fewer than 31 UK workdays of over 3 hours makes the person automatically non-resident.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-auto-uk-only-home",
+     "summary": "Second automatic UK test (only-home test): having your only home in the UK for 91+ consecutive days and staying there on at least 30 days in the tax year makes you resident.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-auto-uk-fulltime-work",
+     "summary": "Third automatic UK test: full-time work in the UK over a 365-day period makes the person resident; not a day-count rule.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-ties-table-a-leavers",
+     "summary": "Sufficient ties test, Table A (UK resident in 1+ of 3 prior years): the more UK days, the fewer UK ties needed to be resident; 5 ties are available, including the country tie.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-ties-table-b-arrivers",
+     "summary": "Sufficient ties test, Table B (not UK resident in any of 3 prior years): 4 ties available; 46-90 days needs all 4, 91-120 needs 3, 121-182 needs 2.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-deeming-30",
+     "summary": "Deeming rule: for someone previously UK resident with 3+ ties, days in the UK without a midnight stop being ignored after the first 30 and count as UK days.",
+     "confidence": "official"
+    },
+    {
+     "id": "gb-tax-day-counting-exceptions",
+     "summary": "Day-counting rule for all SRT tests: midnight presence counts, with exclusions for qualifying transit days and up to 60 exceptional-circumstances days per tax year.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm UK residence status in each of the 3 previous tax years (decides 16-day vs 46-day test and Table A vs Table B).",
+    "Confirm non-residence in all 3 prior tax years.",
+    "Confirm statutory paragraph number (para 23 of Sch 45) - not shown on the manual page opened.",
+    "Confirm tie status; split-year treatment on arrival.",
+    "Count of UK days with more than 3 hours of work (app would need a separate work-day log).",
+    "Death in the tax year modifies this test; not modelled.",
+    "Does the person have an overseas home they use on 30+ days?",
+    "Does the work pattern meet the 'sufficient hours' (35h/week average) calculation?",
+    "Exceptional-circumstances days do not reduce the count for every test (RFIG22220/22230 list which); app should flag rather than auto-exclude.",
+    "Requires a work-hours log; not derivable from location data alone.",
+    "Split-year treatment may apply in the year of arrival/departure; not modelled.",
+    "What counts as a 'home' (vs. a holiday home or temporary lodging)?",
+    "Which ties apply each year (the app can compute the 90-day tie and country tie from logged days, but not family/accommodation/work ties)?"
+   ]
+  },
+  {
+   "country": "IE",
+   "name": "Ireland",
+   "dayTest": {
+    "ruleID": "ie-tax-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident for a tax year (calendar year) if present in Ireland for at least 183 days in that year, counting any part of a day.",
+   "legalReference": "Taxes Consolidation Act 1997, s.819(1)(a) and s.819(4)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "How to know if you are resident for tax purposes",
+     "publisher": "Revenue Commissioners",
+     "url": "https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Tax and Duty Manual Part 34-00-01 (last updated February 2025)",
+     "publisher": "Revenue Commissioners",
+     "url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "ie-tax-280-lookback",
+     "summary": "Look-back rule: resident if total days in the current and previous tax year reach 280, unless current-year days are 30 or fewer; years with 30 or fewer days are ignored in the sum.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Interaction with treaty tie-breakers when also resident elsewhere.",
+    "Ordinary residence (3 consecutive resident years) and domicile affect taxation separately (s.820); not a day test."
+   ]
+  },
+  {
+   "country": "MT",
+   "name": "Malta",
+   "dayTest": null,
+   "summary": "Malta has no strict statutory day test: residence is a facts-based question of whether you reside in Malta; more than 183 days in a calendar year is the practical indicator.",
+   "legalReference": "Income Tax Act (Cap. 123), art. 2 definition of 'resident in Malta'",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Income Tax Act, Cap. 123 (consolidated, amended to Act III of 2026)",
+     "publisher": "Legislation Malta",
+     "url": "https://legislation.mt/eli/cap/123/eng/pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "Malta - Information on residency for tax purposes",
+     "publisher": "OECD (prepared by Malta)",
+     "url": "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency/Malta-Residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "mt-tax-temporary-resident-6-months",
+     "summary": "A temporary visitor with no intention to settle is not taxed on foreign income unless they actually resided in Malta for six months in aggregate in the basis year.",
+     "confidence": "ambiguous"
+    }
+   ],
+   "adviserQuestions": [
+    "Does art. 13 still matter in practice given the remittance basis for non-doms?",
+    "Is 'six months' read as 183 days, 182/181 days, or calendar months by the Commissioner?",
+    "Is the person domiciled and/or ordinarily resident (worldwide vs remittance basis)?",
+    "Minimum tax for resident non-doms and special programmes (GRP, Nomad Residence Permit) have their own conditions; not modelled.",
+    "The MTCA tax-residence page (mtca.gov.mt) returned 403 and was not read."
+   ]
+  },
+  {
+   "country": "FR",
+   "name": "France",
+   "dayTest": {
+    "ruleID": "fr-tax-4b-sejour-principal",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "unclear",
+    "continuous": false
+   },
+   "summary": "Tax domicile in France if ANY one of four criteria is met: foyer, principal place of stay (in practice more than six months a year), main professional activity, or centre of economic interests. Days alone do not decide it.",
+   "legalReference": "Code général des impôts, art. 4 B (version in force since 16 Feb 2025, amended by Loi n° 2025-127 art. 83); BOI-IR-CHAMP-10",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Code général des impôts, Article 4 B",
+     "publisher": "Légifrance",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006302201",
+     "type": "legislation"
+    },
+    {
+     "title": "BOI-IR-CHAMP-10 (archived 2012 version)",
+     "publisher": "DGFiP (BOFiP-Impôts)",
+     "url": "https://bofip.impots.gouv.fr/bofip/1911-PGP.html/identifiant=BOI-IR-CHAMP-10-20120912",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Effect of the 2025 amendment (treaty residence prevails) and the 10-year reassessment period for false foreign domicile.",
+    "The BOFiP version opened is archived (2012/2013); confirm the current BOI-IR-CHAMP-10 wording on the six-month practice.",
+    "Whether the foyer test (family in France) applies irrespective of days."
+   ]
+  },
+  {
+   "country": "BE",
+   "name": "Belgium",
+   "dayTest": null,
+   "summary": "Belgium has no day-count test: you are resident if your domicile or seat of wealth is in Belgium, with a rebuttable presumption from National Register registration.",
+   "legalReference": "Code des impôts sur les revenus 1992 (CIR 92), art. 2, §1er, 1°",
+   "confidence": "secondary_only",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Belgium - Information on residency for tax purposes",
+     "publisher": "OECD (prepared by FPS Finance Belgium)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/belgium-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Married/legal cohabitant presumption (household location) - not confirmed here.",
+    "OECD sheet is dated 2015; confirm no change.",
+    "SPF Finances pages (fin.belgium.be) were behind a human-verification challenge and were not read; confirm against CIR 92 art. 2 text."
+   ]
+  },
+  {
+   "country": "NL",
+   "name": "Netherlands",
+   "dayTest": null,
+   "summary": "Dutch residence is decided on facts and circumstances (durable ties); there is no day threshold.",
+   "legalReference": "Algemene wet inzake rijksbelastingen (AWR), art. 4; Wet IB 2001, art. 2.1",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Emigreer ik als ik naar het buitenland verhuis?",
+     "publisher": "Belastingdienst",
+     "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/emigreren-verhuizen-naar-buitenland",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Netherlands - Information on residency for tax purposes",
+     "publisher": "OECD (prepared by Dutch Tax Administration)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/netherlands-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "nl-tax-return-within-one-year",
+     "summary": "Woonplaatsfictie: leaving and coming back to live in the Netherlands within a year can make you deemed resident during the gap.",
+     "confidence": "ambiguous"
+    }
+   ],
+   "adviserQuestions": [
+    "Box 3 and emigration exit taxes are separate topics.",
+    "Exact scope of the exceptions in art. 2.2 (the summary obtained was not fully clear).",
+    "Version opened was valid 1 Jan-20 Feb 2026; confirm current version.",
+    "Weight of municipal (BRP) registration vs actual ties."
+   ]
+  },
+  {
+   "country": "LU",
+   "name": "Luxembourg",
+   "dayTest": null,
+   "summary": "Resident if Luxembourg is your tax domicile or habitual abode; mostly a facts test.",
+   "legalReference": "LIR art. 2; Steueranpassungsgesetz (StAnpG) §13 and §14",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Résident / non résident",
+     "publisher": "Administration des contributions directes (ACD)",
+     "url": "https://impotsdirects.public.lu/fr/az/r/resid_nonresid.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Séjour habituel",
+     "publisher": "ACD",
+     "url": "https://impotsdirects.public.lu/fr/az/s/sejour.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Luxembourg - Information on residency for tax purposes",
+     "publisher": "OECD (prepared by ACD)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/luxembourg-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "lu-tax-stay-over-6-months",
+     "summary": "A continuous stay of more than six months in Luxembourg (even spanning two years, short absences ignored) makes the person resident from the start of the stay.",
+     "confidence": "secondary_only"
+    }
+   ],
+   "adviserQuestions": [
+    "How the ACD weighs a Luxembourg dwelling vs a centre of vital interests abroad.",
+    "Is the six-month period consecutive, and how do short absences and year-crossing stays count in ACD practice?",
+    "Luxembourg bill 8676 (2026) amends the StAnpG; confirm whether §14 is affected.",
+    "Obtain §14 StAnpG text from Legilux (Mémorial) - no consolidated version found."
+   ]
+  },
+  {
+   "country": "DE",
+   "name": "Germany",
+   "dayTest": {
+    "ruleID": "de-tax-habitual-abode-6m",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "unclear",
+    "continuous": true
+   },
+   "summary": "A continuous stay in Germany of more than six months is always treated as habitual abode from day one, ignoring short trips out; it can span two calendar years. Purely private holiday/visit stays of up to one year are excluded.",
+   "legalReference": "Abgabenordnung (AO) §9 sentences 1–3; EStG §1(1); AEAO zu §9",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Abgabenordnung § 9 Gewöhnlicher Aufenthalt",
+     "publisher": "Bundesministerium der Justiz / Bundesamt für Justiz",
+     "url": "https://www.gesetze-im-internet.de/ao_1977/__9.html",
+     "type": "legislation"
+    },
+    {
+     "title": "Abgabenordnung § 9 Gewöhnlicher Aufenthalt",
+     "publisher": "Bundesministerium der Justiz / Bundesamt für Justiz",
+     "url": "https://www.gesetze-im-internet.de/ao_1977/__9.html",
+     "type": "legislation"
+    },
+    {
+     "title": "AEAO zu § 9 (mirror of the BMF Anwendungserlass)",
+     "publisher": "steuerschroeder.de (private mirror)",
+     "url": "https://www.steuerschroeder.de/steuergesetze/aeao/9",
+     "type": "secondary"
+    },
+    {
+     "title": "Germany – Information on residency for tax purposes",
+     "publisher": "OECD (AEOI portal, submitted by Germany)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/germany-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "de-tax-wohnsitz",
+     "summary": "Anyone who has a home in Germany that they keep and use is fully taxable there, regardless of days present. An app day count cannot rule this out.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm that a six-month+ stay straddling two years makes me resident in both years from arrival (BFH case law, not opened here).",
+    "Does a furnished flat used only occasionally (e.g. a few weeks a year) count as a Wohnsitz in my facts?",
+    "Does the AO §9 sentence 3 holiday exception apply if I do any work (even remote) while in Germany?",
+    "How long may an absence be and still count as a 'kurzfristige Unterbrechung' for my travel pattern?"
+   ]
+  },
+  {
+   "country": "AT",
+   "name": "Austria",
+   "dayTest": {
+    "ruleID": "at-tax-habitual-abode-6m",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "unclear",
+    "continuous": true
+   },
+   "summary": "A stay in Austria of more than six months triggers unlimited tax liability, back-dated to the start of the stay. The Finance Ministry may exempt stays up to one year by people with no business or profession in Austria.",
+   "legalReference": "Bundesabgabenordnung (BAO) §26(2); EStG 1988 §1(2)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "BAO § 26",
+     "publisher": "Rechtsinformationssystem des Bundes (RIS)",
+     "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=26",
+     "type": "legislation"
+    },
+    {
+     "title": "BAO § 26",
+     "publisher": "Rechtsinformationssystem des Bundes (RIS)",
+     "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=26",
+     "type": "legislation"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "at-tax-wohnsitz",
+     "summary": "Having a home available in Austria makes a person fully taxable regardless of days, unless the second-home regulation (70 days) applies.",
+     "confidence": "official"
+    },
+    {
+     "id": "at-tax-zweitwohnsitz-70",
+     "summary": "For someone whose centre of life has been abroad for more than five calendar years, an Austrian home counts as a Wohnsitz only in years when it is used on more than 70 days, provided a usage log is kept.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm that a stay straddling two calendar years counts as one stay.",
+    "Do I meet the 'more than five calendar years' centre-of-life-abroad condition?",
+    "Do nights in hotels or other Austrian accommodation outside the dwelling count?",
+    "Does a day of arrival or departure count as a usage day for the log?",
+    "Does my Austrian property count as a Wohnsitz (available, furnished, usable) even if rarely used?",
+    "Is the BMF waiver for stays up to one year relevant to me?",
+    "Which interruptions break the six-month stay in Austrian practice (EStR 2000 Rz 23ff not opened)?"
+   ]
+  },
+  {
+   "country": "DK",
+   "name": "Denmark",
+   "dayTest": {
+    "ruleID": "dk-tax-6m-stay",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "unclear",
+    "continuous": true
+   },
+   "summary": "A person without a Danish home becomes fully taxable after a stay of at least six months, back-dated to the start; short holiday trips abroad still count toward the six months.",
+   "legalReference": "Kildeskatteloven §1(1) no. 2; Den juridiske vejledning C.F.1.3",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Tax liability in Denmark: Full and limited tax liability",
+     "publisher": "Skattestyrelsen (skat.dk)",
+     "url": "https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Tax liability in Denmark: Full and limited tax liability",
+     "publisher": "Skattestyrelsen (skat.dk)",
+     "url": "https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Den juridiske vejledning 2026-2, C.F.1.3 6-måneders ophold i Danmark (mirror)",
+     "publisher": "tax.dk (mirror of Skattestyrelsen's Juridisk vejledning)",
+     "url": "https://tax.dk/jv/cf/C_F_1_3.htm",
+     "type": "secondary"
+    },
+    {
+     "title": "Den juridiske vejledning 2026-2, C.F.1.3 6-måneders ophold i Danmark (mirror)",
+     "publisher": "tax.dk (mirror of Skattestyrelsen's Juridisk vejledning)",
+     "url": "https://tax.dk/jv/cf/C_F_1_3.htm",
+     "type": "secondary"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "dk-tax-home",
+     "summary": "Someone who establishes a home in Denmark and stays there is fully taxable regardless of days. Owning property without moving there does not by itself trigger liability.",
+     "confidence": "official"
+    },
+    {
+     "id": "dk-tax-holiday-visits",
+     "summary": "A non-resident (e.g. one who owns a Danish property but has not moved) can visit for holidays without full liability if each visit is at most three consecutive months and total days stay within 180 in any 12-month period.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Does my Danish property count as bopæl at my disposal (e.g. if rented out or furnished)?",
+    "Does remote work for a foreign employer while on a trip abroad 'interrupt' the stay?",
+    "How long may a holiday abroad be and still count toward the six months?",
+    "Is the 180 days 'more than' or 'at least' in practice (exactly 180 days)?",
+    "Is the 3-month/180-day holiday allowance applicable if I have a home at my disposal in Denmark and do some remote work while there?"
+   ]
+  },
+  {
+   "country": "SE",
+   "name": "Sweden",
+   "dayTest": {
+    "ruleID": "se-tax-stadigvarande-6m",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "midnight",
+    "continuous": true
+   },
+   "summary": "Staying in Sweden for at least six months in a row (sleeping there) makes a person unlimited taxpayer even without a home; short trips out do not break the stay.",
+   "legalReference": "Inkomstskattelag (1999:1229) 3 kap. 3 § första stycket 2; prop. 2004/05:19 s. 30",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Begränsat eller obegränsat skattskyldig (Norway cross-border page)",
+     "publisher": "Skatteverket",
+     "url": "https://www.skatteverket.se/skatter/internationellt/main/norge/begrsksky.4.65fc817e1077c25b8328000206.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Begränsat eller obegränsat skattskyldig (Norway cross-border page)",
+     "publisher": "Skatteverket",
+     "url": "https://www.skatteverket.se/skatter/internationellt/main/norge/begrsksky.4.65fc817e1077c25b8328000206.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Inkomstskattelag (1999:1229)",
+     "publisher": "Sveriges riksdag",
+     "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/",
+     "type": "legislation"
+    },
+    {
+     "title": "Sweden – Information on residency for tax purposes",
+     "publisher": "OECD (AEOI portal, submitted by Sweden)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/sweden-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "se-tax-bosatt",
+     "summary": "Anyone resident in Sweden is unlimited taxpayer regardless of a day count.",
+     "confidence": "official"
+    },
+    {
+     "id": "se-tax-recurring-stays",
+     "summary": "Even without six continuous months, a regular yearly pattern of long stays can make someone unlimited taxpayer; the Supreme Administrative Court found ~182 days/year with a 5-month summer block sufficient, ~120 days/year not.",
+     "confidence": "ambiguous"
+    },
+    {
+     "id": "se-tax-vasentlig-anknytning",
+     "summary": "Former residents who keep an essential connection remain unlimited taxpayers; for five years after departure that connection is presumed for citizens and 10-year residents unless rebutted.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Do nights only count, i.e. is a day trip into Sweden ignored?",
+    "Does splitting a long summer stay into blocks below ~4 months avoid the rule?",
+    "How long can a break abroad be before it interrupts the six months (RÅ 2008:16 test reported in secondary sources, not opened)?",
+    "Only relevant if the user previously lived in Sweden: can the presumption be rebutted on my facts?",
+    "Where between ~120 and ~182 days/year does a recurring pattern become stadigvarande vistelse for my pattern?"
+   ]
+  },
+  {
+   "country": "FI",
+   "name": "Finland",
+   "dayTest": {
+    "ruleID": "fi-tax-6m-continuous",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "any_presence",
+    "continuous": true
+   },
+   "summary": "A person who stays in Finland continuously for more than six months becomes resident from the arrival date; short absences do not break the stay, but absences of more than about two months generally do.",
+   "legalReference": "Tuloverolaki (1535/1992) 11 §; Vero detailed guidance 'Tax residency and nonresidency' VH/184/00.01.00/2025 (29.1.2025)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Tuloverolaki 1535/1992, 11 § Suomessa asuminen",
+     "publisher": "Finlex (Oikeusministeriö)",
+     "url": "https://www.finlex.fi/fi/lainsaadanto/1992/1535",
+     "type": "legislation"
+    },
+    {
+     "title": "Tax residency and nonresidency (detailed guidance, issued 29.1.2025)",
+     "publisher": "Finnish Tax Administration (Vero)",
+     "url": "https://www.vero.fi/en/detailed-guidance/guidance/48999/",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Tax residency and nonresidency (detailed guidance, issued 29.1.2025)",
+     "publisher": "Finnish Tax Administration (Vero)",
+     "url": "https://www.vero.fi/en/detailed-guidance/guidance/48999/",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Arriving in Finland",
+     "publisher": "Finnish Tax Administration (Vero)",
+     "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/arriving_in_finland/",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "fi-tax-home",
+     "summary": "A person whose real home is in Finland is resident regardless of days.",
+     "confidence": "official"
+    },
+    {
+     "id": "fi-tax-citizen-3yr",
+     "summary": "Applies only to Finnish citizens who move away: they stay resident for the departure year plus three years unless they prove their substantial ties are cut.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "How do repeated stays just under six months with short gaps get assessed?",
+    "Is an absence of 6–8 weeks 'temporary' on my facts?",
+    "Not relevant unless the user is a Finnish citizen."
+   ]
+  },
+  {
+   "country": "EE",
+   "name": "Estonia",
+   "dayTest": {
+    "ruleID": "ee-tax-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Being in Estonia on at least 183 days (part days count) within 12 consecutive calendar months makes a person resident, back-dated to the first documented arrival day.",
+   "legalReference": "Tulumaksuseadus (Income Tax Act) § 6(1)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Residentsuse määramine (last updated 23.10.2026)",
+     "publisher": "Maksu- ja Tolliamet (EMTA)",
+     "url": "https://www.emta.ee/eraklient/valismaalasele-mitteresidendile/maksuresidentsus/residentsuse-maaramine",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Residentsuse määramine (last updated 23.10.2026)",
+     "publisher": "Maksu- ja Tolliamet (EMTA)",
+     "url": "https://www.emta.ee/eraklient/valismaalasele-mitteresidendile/maksuresidentsus/residentsuse-maaramine",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Estonia – Information on residency for tax purposes",
+     "publisher": "OECD (AEOI portal, submitted by Estonia)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/estonia-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Confirm the 12 consecutive calendar months window starts on the 1st of a month (calendar-month blocks) rather than on any date.",
+    "Does a transit day (e.g. airport only) count as a day in Estonia?"
+   ]
+  },
+  {
+   "country": "LV",
+   "name": "Latvia",
+   "dayTest": {
+    "ruleID": "lv-tax-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "unclear",
+    "continuous": false
+   },
+   "summary": "A person is Latvian resident if they spend 183 days or more in Latvia in any 12-month period beginning or ending in the tax year, or if their declared address is in Latvia; residency then runs from the first arrival date.",
+   "legalReference": "Likums 'Par nodokļiem un nodevām' (Law On Taxes and Fees) 14. pants (2) and (3)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Par nodokļiem un nodevām, 14. pants",
+     "publisher": "Latvijas Vēstnesis / likumi.lv",
+     "url": "https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam",
+     "type": "legislation"
+    },
+    {
+     "title": "Par nodokļiem un nodevām, 14. pants",
+     "publisher": "Latvijas Vēstnesis / likumi.lv",
+     "url": "https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam",
+     "type": "legislation"
+    },
+    {
+     "title": "Latvia – Information on residency for tax purposes",
+     "publisher": "OECD (AEOI portal, submitted by Latvia)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/latvia-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "How does VID count arrival/departure days?",
+    "How the 'begins or ends in the tax year' window applies to a stay straddling two years (resident in both?).",
+    "If I have a declared address in Latvia, can I be non-resident by spending under 183 days (it appears not)?"
+   ]
+  },
+  {
+   "country": "LT",
+   "name": "Lithuania",
+   "dayTest": {
+    "ruleID": "lt-tax-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "unclear",
+    "continuous": false
+   },
+   "summary": "Presence in Lithuania for 183 days or more (in aggregate) in a tax year makes a person resident; home or centre of interests in Lithuania also do, regardless of days.",
+   "legalReference": "Gyventojų pajamų mokesčio įstatymas (Law on Personal Income Tax) Art. 4",
+   "confidence": "secondary_only",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Lithuania – Information on residency for tax purposes",
+     "publisher": "OECD (AEOI portal, submitted by Lithuania)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/lithuania-tax-residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "lt-tax-280-two-years",
+     "summary": "Even under 183 days in a year, a person is resident if they spent 280 days or more in Lithuania across two consecutive years and at least 90 days in one of those years.",
+     "confidence": "secondary_only"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm current wording of Art. 4 on e-seimas.lrs.lt (consolidated edition 2026-06-11 – 2026-12-31 exists; not opened due to bot protection).",
+    "How does VMI count partial days?",
+    "In which year(s) is the person resident under the 280-day test: only the year with 90+ days, or the second year?",
+    "Must the 90+ days fall in the year being assessed?"
+   ]
+  },
+  {
+   "country": "PL",
+   "name": "Poland",
+   "dayTest": {
+    "ruleID": "pl-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident if present in Poland on more than 183 days in a calendar year (so 184 days triggers it), or if the centre of vital interests is in Poland regardless of days. Arrival and departure days each count as days in Poland.",
+   "legalReference": "Ustawa o podatku dochodowym od osób fizycznych (26 July 1991), art. 3 ust. 1a; Objaśnienia podatkowe MF z 29 kwietnia 2021, section 2.2",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Poland - Information on residency for tax purposes",
+     "publisher": "OECD AEOI portal (information supplied by Polish Ministry of Finance)",
+     "url": "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency/Poland-Tax-Residency.pdf",
+     "type": "oecd"
+    },
+    {
+     "title": "Objaśnienia podatkowe z dnia 29 kwietnia 2021 r. - Rezydencja podatkowa oraz zakres obowiązku podatkowego osób fizycznych w Polsce",
+     "publisher": "Ministerstwo Finansów (gov.pl)",
+     "url": "https://www.gov.pl/attachment/8f2d0cf1-ee3c-49a4-ae8e-e41c4fb19df7",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "If the centre of vital interests stays in Poland (family, home), Polish residence continues even with under 183 days - confirm the user's ties.",
+    "Mid-year move: the MF explanations accept that residence can start or end during the year; confirm the exact date of change and any treaty tie-breaker.",
+    "No 2024-2026 change to art. 3 ust. 1a was found; confirm nothing new for 2027."
+   ]
+  },
+  {
+   "country": "CZ",
+   "name": "Czechia",
+   "dayTest": {
+    "ruleID": "cz-tax-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident if you stay in Czechia at least 183 days in a calendar year (so 183 days already triggers it, not 184), counting every started day, or if you have a permanent home there with intention to live there.",
+   "legalReference": "Zákon č. 586/1992 Sb., o daních z příjmů, § 2 odst. 2 and 4",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Zákon o daních z příjmů 586/1992 Sb. (consolidated text)",
+     "publisher": "Zákony pro lidi (consolidated reproduction of the Collection of Laws, Sbírka zákonů)",
+     "url": "https://www.zakonyprolidi.cz/cs/1992-586",
+     "type": "legislation"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Does any apartment kept available in Czechia count as bydliště for the user?",
+    "Text read from a private consolidated-law site, not the official e-Sbírka; confirm against e-Sbirka.gov.cz if needed.",
+    "The law says 'at least 183 days' (183 is enough), not 'more than 183' as often summarised - the app should treat 183 as resident."
+   ]
+  },
+  {
+   "country": "SK",
+   "name": "Slovakia",
+   "dayTest": {
+    "ruleID": "sk-tax-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident if you stay in Slovakia at least 183 days in a calendar year, counting every started day, or if you have a registered permanent residence or a home (bydlisko) there.",
+   "legalReference": "Zákon č. 595/2003 Z. z. o dani z príjmov, § 2 písm. d) bod 1 (1a, 1b) and písm. e) bod 2",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "595/2003 Z. z. Zákon o dani z príjmov - časová verzia účinná od 1. 1. 2026",
+     "publisher": "Slov-Lex (Ministry of Justice of the Slovak Republic) - legally binding version",
+     "url": "https://www.slov-lex.sk/static/pdf/2003/595/ZZ_2003_595_20260101.pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "595/2003 Z. z. - časová verzia účinná od 1. 1. 2024 (compared for changes)",
+     "publisher": "Slov-Lex (Ministry of Justice of the Slovak Republic)",
+     "url": "https://www.slov-lex.sk/static/pdf/2003/595/ZZ_2003_595_20240101.pdf",
+     "type": "legislation"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Is 'at least 183' (183 enough) the reading the Slovak tax office applies in practice?",
+    "Wording of § 2 d) is identical in the 2024, 2025 and 2026 versions; confirm no change for 2027.",
+    "Would a flat or long-term rental kept in Slovakia count as bydlisko for the user?"
+   ]
+  },
+  {
+   "country": "HU",
+   "name": "Hungary",
+   "dayTest": {
+    "ruleID": "hu-tax-183-eea",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "An EU/EEA national is resident if they stay in Hungary at least 183 days in a calendar year, with entry and exit days each counting as full days. Below that, a permanent home only in Hungary or the centre of vital interests can still make them resident.",
+   "legalReference": "1995. évi CXVII. törvény (Szja tv.) 3. § 2. pont b) and d)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "1995. évi CXVII. törvény a személyi jövedelemadóról (hatály: 2026.X.1. - 2026.XII.31.)",
+     "publisher": "Nemzeti Jogszabálytár mirror on net.jogtar.hu (Wolters Kluwer); official njt.hu did not respond",
+     "url": "https://net.jogtar.hu/jogszabaly?docid=99500117.tv",
+     "type": "legislation"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "hu-tax-habitual-abode",
+     "summary": "For non-EEA persons without a long-term residence permit, 183 days in a calendar year matters only as a tie-breaker: it applies when there is no single permanent home and no identifiable centre of vital interests.",
+     "confidence": "official"
+    },
+    {
+     "id": "hu-tax-12m-permit-holders",
+     "summary": "Recent carve-out (linked to the 2023 immigration act in force from 2024): holders of a particular long-term residence entitlement are non-resident if they stay in Hungary fewer than 183 days in any 12-month period.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm that the Art. 7. § 44 definition is the one used for Szja tv. 3. § 2. dc) habitual abode.",
+    "For the user (presumably an EU citizen), confirm whether an apartment in Hungary would be a 'permanent home' under point da).",
+    "The jogtar page links a separate version in force from 1 January 2027; check whether 3. § 2-3. pont changes.",
+    "The text speaks of exercising the free-movement right of residence 'for at least 183 days' - does mere physical presence without registering residence count?",
+    "Which residence permit type is § 83(1)(e) of Act XC of 2023, and when exactly did this carve-out take effect? Likely irrelevant for an EU citizen."
+   ]
+  },
+  {
+   "country": "SI",
+   "name": "Slovenia",
+   "dayTest": {
+    "ruleID": "si-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "unclear",
+    "continuous": false
+   },
+   "summary": "Resident if present in Slovenia more than 183 days in total in the tax year, or if you have a registered permanent residence, habitual abode or centre of personal and economic interests there. Students and medical patients are excluded.",
+   "legalReference": "Zakon o dohodnini (ZDoh-2), 6. člen točka 6 (and točki 1 and 5); 7. člen (exceptions)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Zakon o dohodnini ZDoh-2 - neuradno prečiščeno besedilo NPB36",
+     "publisher": "PISRS (Pravno-informacijski sistem RS, Government of Slovenia)",
+     "url": "https://pisrs.si/api/datoteke/integracije/358727643",
+     "type": "legislation"
+    },
+    {
+     "title": "Preselil oz. vrnil sem se v Slovenijo",
+     "publisher": "Finančna uprava RS (FURS)",
+     "url": "https://www.fu.gov.si/zivljenjski_dogodki_prebivalci/preselil_oz_vrnil_sem_se_v_slovenijo",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Slovenia - Information on Residency for tax purposes",
+     "publisher": "OECD AEOI portal (information supplied by Slovenia)",
+     "url": "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency/Slovenia-Tax-Residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "si-tax-foreign-expert-365",
+     "summary": "Narrow exception: a qualifying foreign expert stays non-resident if their total stay over two consecutive tax years is under 365 days.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "How does FURS count arrival and departure days (any presence vs full days)?",
+    "Residence applies 'at any time in the tax year' while a condition is met - confirm how FURS splits a year of arrival/departure.",
+    "The PISRS consolidated text (NPB36, generated September 2025) includes amendments up to Uradni list 40/2025; a secondary source mentioned a December 2025 amendment (Uradni list 98/2025) - confirm whether it touches art. 6.",
+    "Unlikely to apply to the user; confirm only if relocating to Slovenia for qualifying employment."
+   ]
+  },
+  {
+   "country": "HR",
+   "name": "Croatia",
+   "dayTest": {
+    "ruleID": "hr-tax-habitual-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "unclear",
+    "continuous": false
+   },
+   "summary": "Resident if you have a domicile (a dwelling owned or at your disposal for at least 183 days, even unused) or habitual residence in Croatia; habitual residence means a continuous or linked stay of at least 183 days within one or two calendar years.",
+   "legalReference": "Zakon o porezu na dohodak, čl. 3 st. 1; Opći porezni zakon, čl. 43 (st. 1-5) (consolidated to NN 151/2025)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Opći porezni zakon - pročišćeni tekst (do NN 151/2025, na snazi od 01.01.2026), čl. 43",
+     "publisher": "Zakon.hr (consolidated reproduction of Narodne novine)",
+     "url": "https://www.zakon.hr/z/100/Op%C4%87i-porezni-zakon",
+     "type": "legislation"
+    },
+    {
+     "title": "Zakon o porezu na dohodak - pročišćeni tekst, čl. 3",
+     "publisher": "Zakon.hr (consolidated reproduction of Narodne novine)",
+     "url": "https://www.zakon.hr/z/85/Zakon-o-porezu-na-dohodak",
+     "type": "legislation"
+    },
+    {
+     "title": "Croatia - Information on residency for tax purposes",
+     "publisher": "OECD AEOI portal (information supplied by Croatia; document from 2015)",
+     "url": "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency/Croatia-Tax-Residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "How does Porezna uprava read 'in one or two calendar years' - any 183 days straddling year-end, or a rolling 12-month window?",
+    "Owning or renting a flat in Croatia can create domicile with zero days of presence - does the user own or hold any Croatian dwelling?",
+    "Text read from a private consolidated site (zakon.hr), not Narodne novine itself.",
+    "The OECD sheet (2015) cites the old General Tax Act art. 38; the current consolidated text places the rule in art. 43 (version from 1 January 2026, NN 151/2025). Confirm whether the 2026 version changed any wording, especially the dual-domicile tie-breakers in st. 3-4."
+   ]
+  },
+  {
+   "country": "RO",
+   "name": "Romania",
+   "dayTest": {
+    "ruleID": "ro-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident if domiciled in Romania, if the centre of vital interests is there, or if present more than 183 days in total in any 12 consecutive months ending in the calendar year. Arrival and departure days count.",
+   "legalReference": "Legea 227/2015 privind Codul fiscal, art. 7 pct. 28 lit. c); Norme metodologice (HG 1/2016) titlul IV pct. 43 alin. (4) lit. c)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Codul fiscal cu Normele metodologice (actualizat, ultima actualizare Legea nr. 204/2026)",
+     "publisher": "ANAF - Agenția Națională de Administrare Fiscală",
+     "url": "https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm",
+     "type": "tax_authority"
+    },
+    {
+     "title": "Normele metodologice, titlul IV, pct. 43 alin. (4) lit. c)",
+     "publisher": "ANAF - Agenția Națională de Administrare Fiscală",
+     "url": "https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "ANAF consolidated text is informational ('nu reprezintă o republicare'); check Monitorul Oficial for 2026 amendments if needed.",
+    "Confirm that the days-of-presence method in the treaty/salary norm also governs the art. 7 pct. 28 c) residence test.",
+    "Digital-nomad visa holders are carved out of some rules (presence not exceeding 183 days in 12 months); not relevant unless the user holds that visa.",
+    "Rolling-window edge case: a 12-month window ending in year N can start in year N-1 - which tax year does ANAF treat as the first year of residence?"
+   ]
+  },
+  {
+   "country": "BG",
+   "name": "Bulgaria",
+   "dayTest": {
+    "ruleID": "bg-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Resident if present in Bulgaria more than 183 days in any 12-month period (resident for the year the 183 days are exceeded), or if the centre of vital interests is in Bulgaria. Entry and exit days each count as days in Bulgaria.",
+   "legalReference": "Закон за данъците върху доходите на физическите лица (ЗДДФЛ), чл. 4, ал. 1-5",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Закон за данъците върху доходите на физическите лица, чл. 4",
+     "publisher": "Lex.bg (consolidated reproduction of Държавен вестник)",
+     "url": "https://lex.bg/laws/ldoc/2135538631",
+     "type": "legislation"
+    },
+    {
+     "title": "Bulgaria - Information on Residency for tax purposes (2023)",
+     "publisher": "OECD AEOI portal (information supplied by Bulgaria)",
+     "url": "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency/Bulgaria-Tax-Residency.pdf",
+     "type": "oecd"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "'Any 12-month period' plus 'resident for the year in which the stay exceeds 183 days': if the 184th day falls in year Y via a window starting in Y-1, is the user resident for all of Y, and from when?",
+    "Does the NRA apply the rolling window strictly, or in practice per calendar year?",
+    "Text read from lex.bg (private consolidated site), not Държавен вестник; no 2024-2026 amendment to art. 4 was visible."
+   ]
+  },
+  {
+   "country": "MA",
+   "name": "Morocco",
+   "dayTest": {
+    "ruleID": "ma-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "unclear",
+    "continuous": false
+   },
+   "summary": "An individual has Moroccan fiscal domicile if they have a permanent home there, their centre of economic interests there, or stay more than 183 days (continuous or not) in any 365-day period. Any one test suffices; domiciled persons are taxed on worldwide income.",
+   "legalReference": "Code Général des Impôts (Maroc), art. 23-II (art. 23-I for scope of charge); Décret n° 2-08-132 du 28 mai 2009 (list of provinces, art. 1)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Code Général des Impôts, édition 2023 (texte DGI reproduit par le Centre Régional d'Investissement Casablanca-Settat)",
+     "publisher": "Direction Générale des Impôts (Maroc), hosted by CRI Casablanca-Settat",
+     "url": "https://casainvest.ma/sites/default/files/CGI2023FR.pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "CGI 2023, annexe: Décret n° 2-08-132 du 28 mai 2009 pris en application des articles 6 et 31 du CGI",
+     "publisher": "Direction Générale des Impôts (Maroc), hosted by CRI Casablanca-Settat",
+     "url": "https://casainvest.ma/sites/default/files/CGI2023FR.pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "Morocco - Individual - Residence (last reviewed 30 April 2026)",
+     "publisher": "PwC Worldwide Tax Summaries",
+     "url": "https://taxsummaries.pwc.com/morocco/individual/residence",
+     "type": "secondary"
+    },
+    {
+     "title": "Maroc : les principales mesures de la loi de finances pour 2026",
+     "publisher": "Deloitte Société d'Avocats",
+     "url": "https://blog.avocats.deloitte.fr/maroc-les-principales-mesures-de-la-loi-de-finances-pour-2026/",
+     "type": "secondary"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Could owning or renting a home in Morocco used on repeated visits be a 'foyer d'habitation permanent' even below 183 days?",
+    "Do days in Dakhla / Oued-Ed-Dahab count as Moroccan presence for art. 23 in DGI practice (the CGI treats it as a Moroccan province), and how would Cyprus treat them under the Cyprus-Morocco treaty position?",
+    "Does Cyprus have a double tax treaty with Morocco in force? If not, there is no tie-breaker and Moroccan domicile would be decided solely under art. 23.",
+    "How does the DGI count arrival and departure days (any presence vs. full days)?",
+    "LF 2026 adds an annual declaration for foreign-source capital income (art. 84 bis per Deloitte); relevant only if Moroccan domicile were triggered.",
+    "The official text opened is the 2023 CGI edition; confirm art. 23-II is unchanged in the 2026 edition (LF n° 50-25, dahir 1-25-67 of 10 Dec 2025). Secondary summaries of LF 2024-2026 show no change to art. 23."
+   ]
+  },
+  {
+   "country": "MR",
+   "name": "Mauritania",
+   "dayTest": null,
+   "summary": "Mauritania has no 183-day rule in the CGI text opened: an individual is domiciled for tax if they have a permanent home or their centre of vital interests in Mauritania, subject to tax treaties. Short visits create no domicile, but any salary for work done in Mauritania is taxable at source.",
+   "legalReference": "Code Général des Impôts (Loi n° 2019-018 du 29 avril 2019, version officielle janvier 2023), art. 111-2 and 111-3",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Code Général des Impôts - Version officielle 2023",
+     "publisher": "Ministère des Finances, Direction Générale des Impôts (Mauritanie)",
+     "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "Code Général des Impôts - Version officielle 2023, art. 111-3-b",
+     "publisher": "Ministère des Finances, Direction Générale des Impôts (Mauritanie)",
+     "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf",
+     "type": "legislation"
+    },
+    {
+     "title": "Mauritania - Individual - Residence (last reviewed 07 August 2026)",
+     "publisher": "PwC Worldwide Tax Summaries",
+     "url": "https://taxsummaries.pwc.com/mauritania/individual/residence",
+     "type": "secondary"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Is art. 111-3 (in the salaries-tax title) the general fiscal-domicile test for all individual income, or do other schedular taxes (IBAPP, IRCM) apply their own criteria?",
+    "Is there any Cyprus-Mauritania tax treaty? (None found; without one there is no tie-breaker.)",
+    "The official edition opened is January 2023 (amended to LF 2022). Confirm no 183-day or professional-activity limb was added by LF 2023-2026 or the August 2026 amending finance law."
+   ]
+  },
+  {
+   "country": "EG",
+   "name": "Egypt",
+   "dayTest": {
+    "ruleID": "eg-tax-183",
+    "threshold": 183,
+    "comparison": "more_than",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "unclear",
+    "continuous": false
+   },
+   "summary": "A natural person is Egyptian tax resident if they have a permanent domicile in Egypt or stay there more than 183 days, continuous or intermittent, within twelve months. Nationality does not matter.",
+   "legalReference": "Income Tax Law promulgated by Law No. 91 of 2005, art. 2; Executive Regulations (Minister of Finance Decree No. 991 of 2005), art. 3",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Law No. 91 of 2005 promulgating the Income Tax Law (Arabic text as amended up to Law No. 16 of 2020)",
+     "publisher": "WIPO Lex (repository of national legislation)",
+     "url": "https://www.wipo.int/wipolex/es/text/578784",
+     "type": "legislation"
+    },
+    {
+     "title": "Law No. 91 of 2005 (English translation)",
+     "publisher": "Andersen Egypt",
+     "url": "https://eg.andersen.com/wp-content/uploads/2025/06/Law-No.-91-of-2005.pdf",
+     "type": "secondary"
+    },
+    {
+     "title": "Executive Regulations of the Income Tax Law (Minister of Finance Decree 991/2005), art. 3",
+     "publisher": "alberonsy.com (reproduction of the decree)",
+     "url": "https://alberonsy.com/%d8%a7%d9%84%d9%84%d8%a7%d8%a6%d8%ad%d8%a9-%d8%a7%d9%84%d8%aa%d9%86%d9%81%d9%8a%d8%b0%d9%8a%d8%a9-%d9%84%d9%82%d8%a7%d9%86%d9%88%d9%86-%d8%a7%d9%84%d8%b6%d8%b1%d9%8a%d8%a8%d8%a9-%d8%b9%d9%84%d9%89/",
+     "type": "secondary"
+    }
+   ],
+   "otherTests": [],
+   "adviserQuestions": [
+    "Does the Egyptian Tax Authority read 'twelve months' as any rolling 12 months or the tax (calendar) year? How are arrival and departure days counted?",
+    "Is the Cyprus-Egypt double tax treaty (1993) in force, and how does its tie-breaker apply?",
+    "The legal text opened is consolidated to Law 16/2020. Confirm that amendments after 2020 (an adviser summary cites Law No. 7 of 2024) left art. 2 unchanged.",
+    "Under Executive Regulations art. 3, could holding an Egyptian office or workplace create permanent domicile even with few days?"
+   ]
+  },
+  {
+   "country": "CN",
+   "name": "China (Mainland)",
+   "dayTest": {
+    "ruleID": "cn-tax-183",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "full_days",
+    "continuous": false
+   },
+   "summary": "An individual without a Chinese domicile becomes resident if they stay in China for an aggregate of 183 days or more in a calendar-year tax year. Only days with a full 24 hours in China count.",
+   "legalReference": "Individual Income Tax Law of the PRC (7th amendment, 31 Aug 2018), art. 1; IIT Implementation Regulations (State Council Order 707), art. 2; MOF/STA Announcement 2019 No. 34, art. 2",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "中华人民共和国个人所得税法 (2018年第七次修正)",
+     "publisher": "State Taxation Administration (国家税务总局) policy and regulations database",
+     "url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html",
+     "type": "legislation"
+    },
+    {
+     "title": "财政部 税务总局关于在中国境内无住所的个人居住时间判定标准的公告 (2019年第34号)",
+     "publisher": "Ministry of Finance / State Taxation Administration",
+     "url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202334/content.html",
+     "type": "legislation"
+    },
+    {
+     "title": "Announcement No. 34 of 2019 of the MOF and STA (English reference version)",
+     "publisher": "State Taxation Administration",
+     "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5248304/content.html",
+     "type": "tax_authority"
+    },
+    {
+     "title": "中华人民共和国个人所得税法实施条例 (国务院令第707号)",
+     "publisher": "State Council / State Taxation Administration database",
+     "url": "https://fgk.chinatax.gov.cn/zcfgk/c100010/c5194444/content.html",
+     "type": "legislation"
+    },
+    {
+     "title": "FAQ on the Comprehensive Double Taxation Arrangement with the Mainland",
+     "publisher": "Inland Revenue Department (Hong Kong)",
+     "url": "https://www.ird.gov.hk/eng/faq/dta_2006.htm",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "cn-tax-six-year",
+     "summary": "This rule does not decide residence; it widens the tax base for long-term non-domiciled residents. Only after six consecutive 183-plus-day years with no single departure over 30 days does foreign-source income paid from abroad become taxable in China. Irrelevant for a 15-day visitor, but included for completeness.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Confirm that the China-Cyprus treaty (1990) 183-day dependent-services test uses physical-presence counting (any part day) rather than the 24-hour domestic rule.",
+    "How are border crossings by HK-Shenzhen day trips recorded if they do not make a full 24-hour day?",
+    "Not relevant at current visit levels; revisit only if China stays approach 183 days in a year."
+   ]
+  },
+  {
+   "country": "HK",
+   "name": "Hong Kong SAR",
+   "dayTest": {
+    "ruleID": "hk-tax-180",
+    "threshold": 180,
+    "comparison": "more_than",
+    "window": {
+     "type": "taxYear",
+     "startMonth": 4,
+     "startDay": 1
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "For treaty and certificate purposes an individual is a Hong Kong resident if they ordinarily reside there or stay more than 180 days in a year of assessment (1 April - 31 March). Because Hong Kong taxes only Hong Kong-source income, crossing this test does not by itself bring foreign income into tax.",
+   "legalReference": "Inland Revenue Ordinance (Cap. 112), s. 2 definition of 'temporary resident' and s. 41 (personal assessment); comprehensive DTAs (residence article)",
+   "confidence": "official",
+   "verified": "2026-11-07",
+   "sources": [
+    {
+     "title": "Hong Kong, China - Information on Residency for tax purposes",
+     "publisher": "OECD AEOI portal (sheet supplied by Hong Kong IRD)",
+     "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/hong-kong-tax-residency.pdf",
+     "type": "oecd"
+    },
+    {
+     "title": "Certificate of Resident Status",
+     "publisher": "Inland Revenue Department (Hong Kong)",
+     "url": "https://www.ird.gov.hk/eng/tax/dta_cor.htm",
+     "type": "tax_authority"
+    },
+    {
+     "title": "FAQ on the Comprehensive Double Taxation Arrangement with the Mainland",
+     "publisher": "Inland Revenue Department (Hong Kong)",
+     "url": "https://www.ird.gov.hk/eng/faq/dta_2006.htm",
+     "type": "tax_authority"
+    }
+   ],
+   "otherTests": [
+    {
+     "id": "hk-tax-300-two-years",
+     "summary": "Alternatively, an individual is a Hong Kong resident for a year of assessment if they stay more than 300 days in total across that year and the year before or after it.",
+     "confidence": "official"
+    },
+    {
+     "id": "hk-salaries-60-visits",
+     "summary": "A person with non-Hong Kong employment who works in Hong Kong during visits totalling 60 days or fewer in a year of assessment owes no Salaries Tax. Beyond 60 days, the pay for the Hong Kong workdays becomes taxable.",
+     "confidence": "official"
+    }
+   ],
+   "adviserQuestions": [
+    "Any 2024-2026 IRD practice changes on dual-resident individuals (e.g. the IRD guidance under the Mainland-HK arrangement reported by advisers in January 2026)?",
+    "Did any work (meetings, deal work) take place in HK, and is the employment Hong Kong or non-Hong Kong? With an HK employment the 60-day rule only helps if ALL services are rendered outside HK apart from visits.",
+    "Is a director's fee from an HK-managed company involved? DIPN 10 says the 60-day exclusion does not apply to directors' fees.",
+    "Is there a Hong Kong-Cyprus comprehensive DTA? (None identified; without one, HK residence certificates are of limited relevance to a Cyprus resident.)",
+    "The Cap. 112 s. 2 statutory text could not be loaded from elegislation.gov.hk; confirm the wording matches the IRD/OECD summary."
+   ]
+  },
+  {
+   "country": "AU",
+   "name": "Australia",
+   "dayTest": {
+    "ruleID": "au-tax-unverified",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "taxYear",
+     "startMonth": 7,
+     "startDay": 1
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "183 days in the income year (1 Jul), plus other residence tests.",
+   "legalReference": "Not yet researched: written from general public rules, no official source checked.",
+   "confidence": "unverified",
+   "sources": [],
+   "otherTests": [],
+   "adviserQuestions": [
+    "This country's rule has not been checked against an official source yet. Confirm the day test and how travel days count."
+   ]
+  },
+  {
+   "country": "NZ",
+   "name": "New Zealand",
+   "dayTest": {
+    "ruleID": "nz-tax-unverified",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "More than 183 days in any 12-month period.",
+   "legalReference": "Not yet researched: written from general public rules, no official source checked.",
+   "confidence": "unverified",
+   "sources": [],
+   "otherTests": [],
+   "adviserQuestions": [
+    "This country's rule has not been checked against an official source yet. Confirm the day test and how travel days count."
+   ]
+  },
+  {
+   "country": "IN",
+   "name": "India",
+   "dayTest": {
+    "ruleID": "in-tax-unverified",
+    "threshold": 182,
+    "comparison": "at_least",
+    "window": {
+     "type": "taxYear",
+     "startMonth": 4,
+     "startDay": 1
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "182 days in the financial year (1 Apr); fewer days can count with long past stays.",
+   "legalReference": "Not yet researched: written from general public rules, no official source checked.",
+   "confidence": "unverified",
+   "sources": [],
+   "otherTests": [],
+   "adviserQuestions": [
+    "This country's rule has not been checked against an official source yet. Confirm the day test and how travel days count."
+   ]
+  },
+  {
+   "country": "ZA",
+   "name": "South Africa",
+   "dayTest": {
+    "ruleID": "za-tax-unverified",
+    "threshold": 91,
+    "comparison": "at_least",
+    "window": {
+     "type": "taxYear",
+     "startMonth": 3,
+     "startDay": 1
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Physical presence test: over 91 days this year and in each of the past 5 years, and 915 in total.",
+   "legalReference": "Not yet researched: written from general public rules, no official source checked.",
+   "confidence": "unverified",
+   "sources": [],
+   "otherTests": [],
+   "adviserQuestions": [
+    "This country's rule has not been checked against an official source yet. Confirm the day test and how travel days count."
+   ]
+  },
+  {
+   "country": "US",
+   "name": "United States",
+   "dayTest": {
+    "ruleID": "us-tax-unverified",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "Simplified. The Substantial Presence Test adds 1/3 of last year's and 1/6 of the year before's days.",
+   "legalReference": "Not yet researched: written from general public rules, no official source checked.",
+   "confidence": "unverified",
+   "sources": [],
+   "otherTests": [],
+   "adviserQuestions": [
+    "This country's rule has not been checked against an official source yet. Confirm the day test and how travel days count."
+   ]
+  },
+  {
+   "country": "AE",
+   "name": "United Arab Emirates",
+   "dayTest": {
+    "ruleID": "ae-tax-unverified",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "rolling",
+     "days": 365
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "183 days in a 12-month period (90 days with residence and work there).",
+   "legalReference": "Not yet researched: written from general public rules, no official source checked.",
+   "confidence": "unverified",
+   "sources": [],
+   "otherTests": [],
+   "adviserQuestions": [
+    "This country's rule has not been checked against an official source yet. Confirm the day test and how travel days count."
+   ]
+  },
+  {
+   "country": "IL",
+   "name": "Israel",
+   "dayTest": {
+    "ruleID": "il-tax-unverified",
+    "threshold": 183,
+    "comparison": "at_least",
+    "window": {
+     "type": "calendarYear"
+    },
+    "counting": "any_presence",
+    "continuous": false
+   },
+   "summary": "183 days in the year, or 30+ days this year and 425 over three years.",
+   "legalReference": "Not yet researched: written from general public rules, no official source checked.",
+   "confidence": "unverified",
+   "sources": [],
+   "otherTests": [],
+   "adviserQuestions": [
+    "This country's rule has not been checked against an official source yet. Confirm the day test and how travel days count."
+   ]
+  }
+ ]
+}

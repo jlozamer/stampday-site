@@ -3,36 +3,248 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stampday</title>
-<meta name="description" content="Stampday counts the days you spend in each country, with the proof behind every day. For iPhone.">
-<style>
-  :root { --bg: #ffffff; --text: #14181b; --muted: #59636b; --accent: #0b6a87; --soft: #dff1f6; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #0d1113; --text: #e8eef1; --muted: #9aa7ae; --accent: #5ec4e0; --soft: #0e2c36; } }
-  body { background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-         max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
-  h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: -0.5px; }
-  p.lead { font-size: 20px; color: var(--muted); margin-top: 0; }
-  ul { padding-left: 20px; } li { margin: 6px 0; }
-  .soon { display: inline-block; background: var(--soft); color: var(--accent); border-radius: 999px; padding: 6px 14px;
-          font-weight: 600; font-size: 15px; margin: 8px 0 24px; }
-  a { color: var(--accent); } footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
-</style>
+<title>Stampday: count your days in every country, with proof</title>
+<meta name="description" content="Stampday counts the days you spend in each country for tax residence and visa rules, and keeps the proof behind every day: boarding passes, receipts, stamps. For iPhone. Everything stays on your device.">
+<meta name="theme-color" content="#0b6a87">
+<link rel="icon" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="Stampday: your days in every country, with proof">
+<meta property="og:description" content="Day counts for tax residence and visas, with the evidence behind every day. Private by design.">
+<meta property="og:image" content="https://stampday.app/img/icon-256.png">
+<meta property="og:url" content="https://stampday.app/">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Stampday</h1>
-<p class="lead">Count the days you spend in each country, with the proof behind every day.</p>
-<span class="soon">Coming soon to the App Store</span>
-<ul>
-  <li>Counts days per country automatically, for tax residence and visa rules such as 183 days or Schengen 90/180.</li>
-  <li>Keeps the evidence: boarding passes, receipts, entry stamps and card payments, matched to each day.</li>
-  <li>Rules with their legal sources for 40 countries, kept up to date.</li>
-  <li>Everything stays on your iPhone. No account, no tracking.</li>
-</ul>
-<p>Available in English, Español, Deutsch, Français, Italiano, Polski, Ελληνικά and Русский.</p>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="img/icon-256.png" alt="">Stampday</a>
+    <nav>
+      <a class="opt" href="#features">Features</a>
+      <a class="opt" href="#how">How it works</a>
+      <a class="opt" href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><span class="dot"></span>Coming soon to the App Store</span>
+      <h1>Every day in the right country. <em>With proof.</em></h1>
+      <p class="lead">Stampday counts the days you spend in each country and keeps the evidence behind every one of them,
+        so you know where you stand on 183-day rules, Schengen 90/180 and your tax residence.</p>
+      <div class="ctas">
+        <a class="btn primary" href="mailto:support@korepudo.com?subject=Stampday%20early%20access">Get early access</a>
+        <a class="btn ghost" href="#features">See what it does</a>
+      </div>
+      <p class="meta">For iPhone · No account · Your data stays on your device</p>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone back"><img src="img/counters.jpg" alt="" loading="lazy"></div>
+      <div class="phone front"><img src="img/overview.jpg" alt="Stampday overview: today in Cyprus, day counts and counters"></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>183-day</b> tax residence</span>
+    <span><b>Cyprus</b> 60-day rule</span>
+    <span><b>Schengen</b> 90/180</span>
+    <span><b>UK</b> statutory residence test</span>
+    <span><b>40</b> countries' rules, with sources</span>
+    <span><b>8</b> languages</span>
+  </div>
+</div>
+
+<section class="block" id="features">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Features</div>
+      <h2>Your residence, counted and backed up</h2>
+      <p class="sub">A day count is only as good as the proof behind it. Stampday does both: it counts, and it files the evidence.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>Counts by itself</h3>
+        <p>Low-power location notes which country you are in each day. No check-ins, no spreadsheets, little battery.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l2.4 1.8 3 .2.9 2.9 2.2 2-1 2.8 1 2.8-2.2 2-.9 2.9-3 .2L12 21l-2.4-1.8-3-.2-.9-2.9-2.2-2 1-2.8-1-2.8 2.2-2 .9-2.9 3-.2z"/></svg></div>
+        <h3>Proof for every day</h3>
+        <p>Boarding passes, receipts, entry stamps and card payments are matched to the days they prove.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7M15 21v-7M2 10l10-6 10 6"/></svg></div>
+        <h3>Rules with their sources</h3>
+        <p>Each counter follows a country's own rule, how it counts travel days and its window, citing the law it comes from.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 10v6M9 13l3 3 3-3"/></svg></div>
+        <h3>Brings in your past</h3>
+        <p>Rebuild earlier years from your photos, Google location history, other travel apps' backups or a simple CSV.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l20-6-4-3-5 1.5L7 4 5 5l3 5-4 1.2L2 9l-1 1z"/><path d="M3 20h18"/></svg></div>
+        <h3>Every border crossing</h3>
+        <p>Flights, layovers, ferries, trains and road crossings, each with its ticket. It flags the crossings that still need one.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+        <h3>An evidence file for your adviser</h3>
+        <p>One PDF per year: days per country, every trip with its proof, your tax numbers on the cover.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <div class="row">
+      <div class="text">
+        <div class="eyebrow">Counters</div>
+        <h2>Know how many days you have left</h2>
+        <p class="sub">Set up the counters that matter to you, suggested from where you live, your passports and whether you are moving this year.</p>
+        <ul>
+          <li>Stay under a limit, or reach a minimum, per calendar or tax year</li>
+          <li>Rolling windows like Schengen's 90 days in any 180</li>
+          <li>"Not resident elsewhere": every other country's own test at once</li>
+          <li>Each counter turns amber as you get close, so you can plan your next trip</li>
+        </ul>
+      </div>
+      <div class="shot"><div class="phone"><img src="img/counters.jpg" alt="Counters screen with days left per rule" loading="lazy"></div></div>
+    </div>
+    <div class="row flip">
+      <div class="text">
+        <div class="eyebrow">Evidence</div>
+        <h2>The proof a tax office asks for</h2>
+        <p class="sub">Day counts can be challenged. Stampday shows which days are backed by something a third party issued, and which are not yet.</p>
+        <ul>
+          <li>Receipts and border papers found in the photos you already take</li>
+          <li>Boarding passes from Wallet, PDFs or screenshots, with your name checked</li>
+          <li>Card statements matched with receipts of the same day</li>
+          <li>Days without proof listed, so you can fill the gaps in time</li>
+        </ul>
+      </div>
+      <div class="shot"><div class="phone"><img src="img/counterDetail.jpg" alt="A counter with its proof coverage for the tax office" loading="lazy"></div></div>
+    </div>
+    <div class="row">
+      <div class="text">
+        <div class="eyebrow">Trips</div>
+        <h2>Every crossing, with its ticket</h2>
+        <p class="sub">Your stays and journeys in one timeline. Connections are joined into one trip, and an overnight layover asks whether you left the airport.</p>
+        <ul>
+          <li>Stays per country with how each day was known</li>
+          <li>Flights, ferries, trains and road crossings</li>
+          <li>Airside transit never counts as a day in the country</li>
+        </ul>
+      </div>
+      <div class="shot"><div class="phone"><img src="img/trips.jpg" alt="Trips and tickets with crossings still missing proof" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="how">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">How it works</div>
+      <h2>Set up in two minutes, then forget it</h2>
+      <p class="sub">Stampday works in the background. You open it when you want to check where you stand.</p>
+    </div>
+    <div class="steps">
+      <div class="card step"><h3>Tell it about you</h3><p>Where you are tax resident, your passports and whether you are moving. It suggests the counters to track.</p></div>
+      <div class="card step"><h3>Live your life</h3><p>Travel as usual and take photos as usual. Stampday notes the country each day and files receipts and passes it finds.</p></div>
+      <div class="card step"><h3>Check and share</h3><p>See days left on every counter, fill the few gaps it points out, and export the evidence file when your adviser asks.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="privacy" style="padding-top:0">
+  <div class="wrap">
+    <div class="privacy">
+      <div>
+        <div class="eyebrow" style="color:#a9e2f1">Privacy</div>
+        <h2>Your travel history never leaves your iPhone</h2>
+        <p>Where you have been is some of the most personal data there is. Stampday has no servers that store it, no account
+          and no analytics. You decide when anything is shared: an evidence file, an export, or a backup to your own iCloud Drive.</p>
+        <p><a href="privacy.html" style="color:#fff;text-decoration:underline">Read the privacy policy</a></p>
+      </div>
+      <ul>
+        <li>No account<span>Nothing to sign up for, nothing to leak.</span></li>
+        <li>No tracking, no ads<span>No analytics or advertising tools in the app.</span></li>
+        <li>On-device reading<span>Photos, tickets and receipts are read on your iPhone.</span></li>
+        <li>Backups you own<span>Saved to a folder you choose, restored with every setting.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Made for</div>
+      <h2>People whose year spans several countries</h2>
+    </div>
+    <div class="who" style="margin-top:36px">
+      <div class="card"><h3>Moving abroad</h3><p>Leaving one tax residence and starting another, with a count for each side of the move.</p></div>
+      <div class="card"><h3>Digital nomads</h3><p>Months in different places, with every country's own day test watched for you.</p></div>
+      <div class="card"><h3>Frequent travellers</h3><p>Schengen and visa limits, and a clear record of every trip and crossing.</p></div>
+      <div class="card"><h3>Advisers' clients</h3><p>A clean evidence file instead of a box of boarding passes at tax time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">FAQ</div>
+      <h2>Questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Is Stampday tax advice?</summary>
+        <p>No. It counts days the way each country's rule describes and shows the legal source, but residence also depends on
+          things a day count can't see, like your home, family and work. Check your situation with a tax adviser; Stampday gives them clean numbers and evidence.</p></details>
+      <details><summary>Which countries and rules does it know?</summary>
+        <p>Rules for 40 countries, including the 183-day tests, Cyprus's 60-day rule, the UK statutory residence test and
+          Schengen 90/180, each with its sources and the date it was last checked. You can also make your own counter.</p></details>
+      <details><summary>Does it drain my battery?</summary>
+        <p>No. It uses the iPhone's low-power location changes instead of constant GPS, and only needs the country you are in each day.</p></details>
+      <details><summary>What about the years before I installed it?</summary>
+        <p>Import from your photos' places, Google location history, another travel app's backup or a CSV of dates and countries.
+          Boarding passes and receipts you saved are found and filed too.</p></details>
+      <details><summary>What if I change iPhone?</summary>
+        <p>Back up to a folder you choose, such as iCloud Drive, and restore on the new iPhone. Everything comes back: days, proofs, profile and settings.</p></details>
+      <details><summary>Which languages?</summary>
+        <p>English, Spanish, German, French, Italian, Polish, Greek and Russian. It also reads receipts, tickets and stamps in many more scripts, from Arabic to Chinese.</p></details>
+      <details><summary>Is there an Android version?</summary>
+        <p>Not yet. Stampday is for iPhone first. Write to us if you would use it on Android.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="block alt final">
+  <div class="wrap">
+    <img src="img/icon-256.png" alt="Stampday app icon">
+    <h2>Be first to try Stampday</h2>
+    <p class="sub" style="margin-left:auto;margin-right:auto">It is in testing now. Tell us you're interested and we'll write when it's on the App Store.</p>
+    <a class="btn primary" href="mailto:support@korepudo.com?subject=Stampday%20early%20access">Get early access</a>
+  </div>
+</section>
+
 <footer>
-  <a href="support.html">Support</a> · <a href="privacy.html">Privacy policy</a> ·
-  <a href="mailto:support@korepudo.com">support@korepudo.com</a><br>
-  © 2026 KorePudo Ltd, Limassol, Cyprus
+  <div class="wrap">
+    <div>© 2026 KorePudo Ltd · Limassol, Cyprus</div>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:support@korepudo.com">support@korepudo.com</a>
+    </nav>
+  </div>
 </footer>
+
 </body>
 </html>

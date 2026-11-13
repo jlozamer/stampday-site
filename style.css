@@ -38,9 +38,14 @@ img { max-width: 100%; display: block; }
 .brand:hover { text-decoration: none; }
 .brand img { width: 30px; height: 30px; border-radius: 8px; }
 .nav nav { margin-left: auto; display: flex; gap: 22px; font-size: 15px; }
-.nav nav a { color: var(--muted); }
+.nav nav a { color: var(--muted); white-space: nowrap; }
 .nav nav a:hover { color: var(--text); text-decoration: none; }
-@media (max-width: 640px) { .nav nav a.opt { display: none; } }
+/* The nav also carries the link to the other language, so it sheds links as the screen narrows:
+   "wide" words first, then the "opt" links, and on the smallest phones the "opt-s" one. */
+@media (max-width: 900px) { .nav nav .wide { display: none; } }
+@media (max-width: 760px) { .nav nav a.opt { display: none; } }
+@media (max-width: 420px) { .nav .wrap { gap: 14px; } .nav nav { gap: 14px; font-size: 14px; } }
+@media (max-width: 340px) { .nav nav a.opt-s { display: none; } }
 
 /* Buttons and pills */
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 999px;
